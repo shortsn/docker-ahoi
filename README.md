@@ -1,5 +1,10 @@
 # Docker ahoi! - Round 1
 
+Hinweise:
+
+- jede Zeile im Dockerfile erzeugt einen Layer
+- statische DInge möglichst nach oben im File
+
 ## Goals
 
 * Write your own Dockerfile
@@ -19,7 +24,7 @@ Fill out `Dockerfile`
 
 ### Build docker image
 
-docker build .
+docker build -t round-1 .
 ___
 
 ### Run docker container
@@ -29,34 +34,39 @@ ___
 
 ### List running docker containers
 
-
+docker ps
 ___
 
 ### Stop docker container
 
-docker container stop 
+docker container stop XYZ
 ___
 
 ### List all docker containers
 
-docker ps
+docker ps -a
 ___
 
 ### Remove created container
 
-
+ docker image rm xyz
 ___
 
 ### Run docker container with removal
 
+docker container run --rm -p 127.0.0.1:5000:1337 xyz
 ___
 
 ### Run docker container in background
 
+docker container run -d -p 127.0.0.1:5000:1337 yxz
 ___
 
 ### Step into container
 
+führt einen Befehl `sh` im container aus
+
+docker exec -it xyz sh
 ___
 
 ### Stop container
