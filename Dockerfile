@@ -4,7 +4,7 @@ FROM python:2.7.13-alpine
 
 # testapp folder has to be at /usr/local/opt/testapp
 
-ADD testapp /usr/local/opt/testapp
+COPY ["testapp", "/usr/local/opt/testapp"]
 
 # Go to /usr/local/opt/testapp and run pip install --editable .
 
