@@ -19,25 +19,31 @@ Fill out `Dockerfile`
 
 ### Build docker image
 
+docker build .
 ___
 
 ### Run docker container
 
+docker container run -p 127.0.0.1:5000:1337 9c59fff26a92
 ___
 
 ### List running docker containers
+
 
 ___
 
 ### Stop docker container
 
+docker container stop 
 ___
 
 ### List all docker containers
 
+docker ps
 ___
 
 ### Remove created container
+
 
 ___
 
